@@ -8,20 +8,20 @@ const MovingGif = () => {
       case 0: // Move right
         setPosition(prevPosition => ({
           ...prevPosition,
-          x: prevPosition.x + 600,
+          x: prevPosition.x + 60,
         }));
         break;
       case 1: // Move down
         setPosition(prevPosition => ({
           ...prevPosition,
-          y: prevPosition.y + 300,
-          x:prevPosition.x -200
+          y: prevPosition.y + 50,
+          x:prevPosition.x -20
         }));
         break;
       case 2: // Move left
         setPosition(prevPosition => ({
           ...prevPosition,
-          x: prevPosition.x - 300,
+          x: prevPosition.x - 30,
         }));
         break;
       default: // Reset to original position
@@ -33,7 +33,7 @@ const MovingGif = () => {
 
   return (
     <div className='main'>    
-    <div className='Wizard-style' style={{ position: 'relative', top: position.y, left: position.x }}>
+    <div className='Wizard-style' style={{ position: 'relative', top: `${position.y}%`, left: `${position.x }%`}}>
       <img
         src="https://www.wizard.financial/static/media/wizaart-img.56787174.gif"
         alt="moving-gif"
