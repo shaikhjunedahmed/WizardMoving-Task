@@ -32,7 +32,8 @@ const MovingGif = () => {
   };
 
   return (
-    <div style={{ position: 'relative', top: position.y, left: position.x }}>
+    <div className='main'>    
+    <div className='Wizard-style' style={{ position: 'relative', top: position.y, left: position.x }}>
       <img
         src="https://www.wizard.financial/static/media/wizaart-img.56787174.gif"
         alt="moving-gif"
@@ -40,6 +41,7 @@ const MovingGif = () => {
         style={{ cursor: 'pointer',width:"200px" }}
       />
       {/* <button onClick={() => setMoveCount(0)}>Reset</button> */}
+    </div>
     </div>
   );
 };
