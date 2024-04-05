@@ -65,7 +65,7 @@ const MovingGif = () => {
   return (
     <div className='main'>
     <div className='Wizard-style' style={{ position: 'absolute', top: position.y , left: position.x }}>
-      <img src="https://www.wizard.financial/static/media/wizaart-img.56787174.gif" alt="moving-wizard" style={{ cursor: 'pointer',width:"200px" }} />
+      <img src="https://www.wizard.financial/static/media/wizaart-img.56787174.gif" alt="moving-wizard" style={{ cursor: 'pointer',width:"150px" }} />
     </div>
     </div>
   );
